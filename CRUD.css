@@ -1,0 +1,28 @@
+@font-face {
+    font-family:Oregano ;
+    src: url(./Oregano-Regular.ttf);
+}
+
+#Oregano{
+    font-family:Oregano;
+    color: red;
+    position: relative;
+}
+
+#Oregano::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #7bee10a8;
+    z-index: -1;
+    transition-duration:0.5s ;
+}
+
+
+#Oregano:hover::before{
+    height: 75%;
+    background-color: #234600d5;
+}
